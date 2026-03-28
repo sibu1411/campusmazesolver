@@ -1,7 +1,5 @@
 #  Campus Navigation: The "Maze Solver" Agent
 
-**A 1st-Year AI & ML Student Project | Module 2: Search Strategies**
-
 ###  The Problem
 
 Imagine you are at the **Hostel (S)** and need to get to the **AI Lab (G)** for a morning class. The campus isn't just an empty field—there are buildings, walls, and restricted zones (**\#**) in your path.
@@ -24,7 +22,7 @@ When I ran the code on my campus map, here is how the agent performed:
   * **Efficiency Win:** While BFS had to "look" at **24** different coordinates, A\* found the same path by only checking **\~21** spots.
   * **The Math:** A\* uses the evaluation function **f(n) = g(n) + h(n)** to stay on track.
 
-### 🛠️ Project Structure
+###  Project Structure
 
   * `src/solver.py`: The core logic for the BFS and A\* algorithms.
   * `requirements.txt`: Standard Python environment setup (no external libraries required).
@@ -53,13 +51,8 @@ To test the agent on your own machine, follow these steps:
       * **\*** = The path discovered by the AI\!
 
 
-###  What I Learned
-
-This project was a deep dive into **State Space Search**. I realized that "Intelligence" in AI often just means giving an algorithm a little bit of "context" (like a Heuristic) so it doesn't have to guess. It taught me how to turn a physical location into a discrete grid that a computer can solve.
-
-
 **Created by:** Smruti Sagar Sethy(25BAI11138)  
-**Major:** B.Tech in Artificial Intelligence & Machine Learning
+**Course:** B.Tech in Artificial Intelligence & Machine Learning
 
 
 <img width="1690" height="938" alt="Screenshot 2026-03-28 160128" src="https://github.com/user-attachments/assets/dc174cdf-dc5d-4101-8f81-f253f187a2c6" />
