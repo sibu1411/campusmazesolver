@@ -13,10 +13,15 @@ Manhattan Distance Formula:d=x1 - x2 + y1 - y2
 Conclusion & KeyTakeaways:
 This project successfully demonstrates that *Informed Search (A)** is significantly more efficient than Uninformed Search (BFS) for navigation tasks. By using a Manhattan Distance heuristic, the agent was able to ignore 60% of the 'wrong' directions that BFS explored, proving that a little bit of knowledge goes a long way in AI.
 
-<img width="1690" height="938" alt="Screenshot 2026-03-28 160128" src="https://github.com/user-attachments/assets/3f9f08d4-f312-404e-be51-e7b3e7f19d38" />
-<img width="1301" height="938" alt="Screenshot 2026-03-28 160150" src="https://github.com/user-attachments/assets/762aed6a-8efe-46e2-8858-fe9f996d5888" />
-<img width="1113" height="881" alt="Screenshot 2026-03-28 160207" src="https://github.com/user-attachments/assets/1f22aed2-383f-4e7b-8ce6-0761fc0dc12f" />
-<img width="489" height="314" alt="Screenshot 2026-03-28 160251" src="https://github.com/user-attachments/assets/1978c145-0f1a-4925-9758-42decd3d0a5f" />
+
+
+<img width="1690" height="938" alt="Screenshot 2026-03-28 160128" src="https://github.com/user-attachments/assets/dc174cdf-dc5d-4101-8f81-f253f187a2c6" />
+
+<img width="1301" height="938" alt="Screenshot 2026-03-28 160150" src="https://github.com/user-attachments/assets/7ace5aaa-a017-4f80-9c4f-39e90bc853de" />
+
+<img width="1113" height="881" alt="Screenshot 2026-03-28 160207" src="https://github.com/user-attachments/assets/0ac0d3d3-799c-4d88-9165-b99fd378e729" />
+
+<img width="489" height="314" alt="Screenshot 2026-03-28 160251" src="https://github.com/user-attachments/assets/c606b13b-87d1-4597-b911-1fb51b15a966" />
 
 
 
