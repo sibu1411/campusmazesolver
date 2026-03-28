@@ -9,7 +9,7 @@ Heuristic Function: Uses Manhattan Distance to calculate the estimated cost to t
 Technical Logic:The core of the Informed Search (A*) is the evaluation function:f(n) = g(n) + h(n) 
 g(n):The actual cost from the start node to the current node n.
 h(n):The estimated cost from n to the goal (Manhattan Distance).
-Manhattan Distance Formula:d=x1 - x2 + y1 - y2
+Manhattan Distance Formula:d=|x1 - x2| + |y1 - y2|
 Conclusion & KeyTakeaways:
 This project successfully demonstrates that *Informed Search (A)** is significantly more efficient than Uninformed Search (BFS) for navigation tasks. By using a Manhattan Distance heuristic, the agent was able to ignore 60% of the 'wrong' directions that BFS explored, proving that a little bit of knowledge goes a long way in AI.
 
