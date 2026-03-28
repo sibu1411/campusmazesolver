@@ -1,18 +1,65 @@
-# campusmazesolver
-A Pythonbased pathfinding agent that navigates a simulated campus grid using BFS(Uninformed) and A*(Informed) search strategies.
-Campus Navigation Maze SolverCourse Connection: Module 2 - Search Strategies (Uninformed vs. Informed)
-Overview:This project implements a Problem-Solving Agent designed to find the most efficient path between two points on a university campus (e.g., from a Hostel to a Lab).The goal is to navigate a 2D grid while avoiding "dead zones" or obstacles (buildings). This project specifically compares how a "blind" search compares to a "smart" search using heuristics.
-FeaturesEnvironment:A 2D Matrix representing the campus grid.0: Walkable path.1: Obstacle/Building.
-Algorithms:BFS(Breadth-First Search): An uninformed search that explores all possibilities layer-by-layer.A (A-Star)
-Search: An informed search that uses a heuristic to target the goal.
-Heuristic Function: Uses Manhattan Distance to calculate the estimated cost to the destination.
-Technical Logic:The core of the Informed Search (A*) is the evaluation function:f(n) = g(n) + h(n) 
-g(n):The actual cost from the start node to the current node n.
-h(n):The estimated cost from n to the goal (Manhattan Distance).
-Manhattan Distance Formula:d=|x1 - x2| + |y1 - y2|
-Conclusion & KeyTakeaways:
-This project successfully demonstrates that *Informed Search (A)** is significantly more efficient than Uninformed Search (BFS) for navigation tasks. By using a Manhattan Distance heuristic, the agent was able to ignore 60% of the 'wrong' directions that BFS explored, proving that a little bit of knowledge goes a long way in AI.
+#  Campus Navigation: The "Maze Solver" Agent
 
+**A 1st-Year AI & ML Student Project | Module 2: Search Strategies**
+
+###  The Problem
+
+Imagine you are at the **Hostel (S)** and need to get to the **AI Lab (G)** for a morning class. The campus isn't just an empty field—there are buildings, walls, and restricted zones (**\#**) in your path.
+
+I built this Python-based "Problem-Solving Agent" to figure out the best way to navigate a 7x7 grid using two different types of "AI brains": **BFS** (Uninformed) and **A**\* (Informed).
+
+###  How the Agent "Thinks"
+
+| Algorithm | The Strategy | My Observation |
+| :--- | :--- | :--- |
+| **BFS** | "The Blind Wanderer" | It checks every single direction equally. It's guaranteed to find the shortest path, but it wastes a lot of energy looking at walls. |
+| **A* Search*\* | "The Smart Navigator" | It uses a **Heuristic (Manhattan Distance)** to "sense" where the Goal is. It's much more efficient because it focuses on moving toward the target. |
+
+
+###  Real-World Results
+
+When I ran the code on my campus map, here is how the agent performed:
+
+  * **Path Found:** Yes (19 steps total).
+  * **Efficiency Win:** While BFS had to "look" at **24** different coordinates, A\* found the same path by only checking **\~21** spots.
+  * **The Math:** A\* uses the evaluation function **f(n) = g(n) + h(n)** to stay on track.
+
+### 🛠️ Project Structure
+
+  * `src/solver.py`: The core logic for the BFS and A\* algorithms.
+  * `requirements.txt`: Standard Python environment setup (no external libraries required).
+  * `.gitignore`: Keeps the repository clean by hiding temporary `__pycache__` files.
+  * `LICENSE`: MIT License (open for others to learn from\!).
+
+
+###  How to Run the Solver
+
+To test the agent on your own machine, follow these steps:
+
+1.  **Clone the Repository:**
+    ```bash
+    git clone https://github.com/yourusername/Campus-Maze-Solver.git
+    cd Campus-Maze-Solver
+    ```
+2.  **Run the Script:**
+    Execute the main solver file from your terminal:
+    ```bash
+    python src/solver.py
+    ```
+3.  **Interpret the Map:**
+      * **S** = Hostel (Start)
+      * **G** = AI Lab (Goal)
+      * **\#** = Buildings (Obstacles)
+      * **\*** = The path discovered by the AI\!
+
+
+###  What I Learned
+
+This project was a deep dive into **State Space Search**. I realized that "Intelligence" in AI often just means giving an algorithm a little bit of "context" (like a Heuristic) so it doesn't have to guess. It taught me how to turn a physical location into a discrete grid that a computer can solve.
+
+
+**Created by:** Smruti Sagar Sethy(25BAI11138)  
+**Major:** B.Tech in Artificial Intelligence & Machine Learning
 
 
 <img width="1690" height="938" alt="Screenshot 2026-03-28 160128" src="https://github.com/user-attachments/assets/dc174cdf-dc5d-4101-8f81-f253f187a2c6" />
