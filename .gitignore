@@ -1,0 +1,22 @@
+# Python temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.venv/
+env/
+venv/
+ENV/
+
+# macOS system files
+.DS_Store
+
+# Distribution / Build
+dist/
+build/
+*.egg-info/
+
+# Windows system files
+Thumbs.db
+desktop.ini
