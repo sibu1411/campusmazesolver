@@ -34,17 +34,13 @@ When I ran the code on my campus map, here is how the agent performed:
 
 To test the agent on your own machine, follow these steps:
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone https://github.com/yourusername/Campus-Maze-Solver.git
-    cd Campus-Maze-Solver
-    ```
-2.  **Run the Script:**
+
+1.  **Run the Script:**
     Execute the main solver file from your terminal:
     ```bash
     python src/solver.py
     ```
-3.  **Interpret the Map:**
+2.  **Interpret the Map:**
       * **S** = Hostel (Start)
       * **G** = AI Lab (Goal)
       * **\#** = Buildings (Obstacles)
